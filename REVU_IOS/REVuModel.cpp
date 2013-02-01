@@ -17,6 +17,7 @@
 #include "aiPostProcess.h"
 #include "aiMesh.h"
 #include "aiVector3D.h"
+#include "aiVersion.h"
 
 
 //FROM QCAR
@@ -112,9 +113,13 @@ REVuModel::REVuModel(const char *dataPath, const char * modelName)
     _rotation = vec3(kInitalRoation, 0.0, 0.0);
     _lightDirection = vec3(0.0, 0., -1.0); //FRONT & ABOVE
     _alpha =1.0;
- 
+    _customTexture = false;
+    _customMaterial = false;
 
     Assimp::Importer* importer =  new Assimp::Importer();
+    
+    printf("\nASSIMP Version %i.%i.%i\n", aiGetVersionMajor(), aiGetVersionMinor(),aiGetVersionRevision());
+    printf("FREEIMAGE Version %s \n\n", FreeImage_GetVersion());
     
     scene = importer->ReadFile(modelPath.data,aiProcessPreset_TargetRealtime_MaxQuality);    
     if(!scene || !initShaders())
