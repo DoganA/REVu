@@ -1,6 +1,6 @@
 //
 //  Material.h
-//  Created by Frank Fritze on 18.01.13.
+//  Created by DrNeurosurg on 18.01.13.
 //
 //
 

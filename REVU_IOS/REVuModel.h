@@ -5,8 +5,8 @@
 //
 //
 
-#ifndef _SimpleAILoader__
-#define _SimpleAILoader__
+#ifndef _REVUModel__
+#define _REVUModel__
 
 #include <iostream>
 #include "Vector.h"
@@ -103,4 +103,4 @@ private:
     void getBoundingBoxForNode(const struct aiNode* nd,  struct aiVector3D* min, struct aiVector3D* max, struct aiMatrix4x4* trafo);
     
 };
-#endif /* defined(__ImageTargets__SimpleAILoader__) */
+#endif 

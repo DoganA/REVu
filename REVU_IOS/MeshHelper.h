@@ -1,13 +1,11 @@
 //
 //  MeshHelper.h
-//  AiTargets
-//
-//  Created by Frank Fritze on 30.01.13.
+//  Created by DrNeurosurg on 30.01.13.
 //
 //
 
-#ifndef AiTargets_MeshHelper_h
-#define AiTargets_MeshHelper_h
+#ifndef _MeshHelper_h
+#define _MeshHelper_h
 
 #include "assimp.h"
 #include "aiPostProcess.h"

@@ -1,14 +1,12 @@
 //
 //  NFreeImage.h
-//  AiTargets
-//
-//  Created by Frank Fritze on 30.01.13.
+//  Created by DrNeurosurg on 30.01.13.
 //
 //
 
 
-#ifndef AiTargets_NFreeImage_h
-#define AiTargets_NFreeImage_h
+#ifndef _NFreeImage_h
+#define _NFreeImage_h
 
 #include "FreeImage.h"
 #define BYTE unsigned char
@@ -55,7 +53,7 @@ public:
         
         // Check the file signature and deduce its format.
         FREE_IMAGE_FORMAT FreeImageFormat = FreeImage_GetFileType( i_rFilename.c_str(), 0 );
-        printf("FreeImage Version %s \n", FreeImage_GetVersion());
+        
         
         // If still unknown, try to guess the file format from the file extension.
         if( FreeImageFormat == FIF_UNKNOWN )
